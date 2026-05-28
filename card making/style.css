@@ -1,0 +1,41 @@
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adds space between the cards */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-card {
+    width: 300px; /* Controls the card width */
+    border: 1px solid #b67979;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Restricts oversized images from breaking the layout */
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Keeps image aspect ratio clean */
+    border-radius: 4px;
+}
+
+.product-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
