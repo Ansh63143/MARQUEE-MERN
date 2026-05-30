@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+
+    <style>
+        input {
+            outline: none;
+            border: none;
+            border-bottom: 2px dotted;
+        }
+    </style>
+</head>
+
+<body> 
+    <h2>Sports Physical Form</h2>
+
+    <form action="actionpage.html" method="get">
+
+        <fieldset>
+            <legend>Athlete Information</legend>
+
+            <ul>
+                <li>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your name..." />
+                </li>
+
+                <li>
+                    <label for="school_team">School/Team:</label>
+                    <input type="text" id="school_team" name="school_team" placeholder="Enter your school or Team" />
+                </li>
+
+                <li>
+                    <label for="sports">Sports:</label>
+                    <input type="text" id="sports" name="sport" placeholder="Sports..." />
+                </li>
+
+                <li>
+                    <label for="parent_guardian">
+                        Parent/Guardian Name:
+                    </label>
+                    <input type="text" id="parent_guardian" name="parent_guardian" placeholder="Parent or Guardian.."
+                        required />
+                </li>
+
+                <li>
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Example: +91 525252521" required />
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Medical History for Athlete</legend>
+
+            <ul>
+                <li>
+                    History Of Concussions:
+
+                    <input type="radio" name="concussions" id="concussions-yes" value="yes" />
+                    <label for="concussions-yes">Yes</label>
+
+                    <input type="radio" name="concussions" id="concussions-no" value="no" />
+                    <label for="concussions-no">No</label>
+                </li>
+
+                <li>
+                    <label for="previous_surgeries">
+                        Previous Surgeries:
+                    </label>
+
+                    <input type="text" name="previous_surgeries" id="previous_surgeries" />
+                </li>
+
+                <li>
+                    Any bone fracture:
+
+                    <input type="radio" name="fracture" id="fracture-yes" value="yes" />
+                    <label for="fracture-yes">Yes</label>
+
+                    <input type="radio" name="fracture" id="fracture-no" value="no" />
+                    <label for="fracture-no">No</label>
+                </li>
+
+                <li>
+                    Breathing problem?:
+
+                    <input type="radio" name="breathing" id="breathing-yes" value="yes" />
+                    <label for="breathing-yes">Yes</label>
+
+                    <input type="radio" name="breathing" id="breathing-no" value="no" />
+                    <label for="breathing-no">No</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Date/Time</legend>
+            <ul>
+                <li>
+                    <label for="dob">DOB</label>
+                    <input type="date" name="DOB" id="dob" required />
+                </li>
+                <li>
+                    <label>Time</label>
+                    <input type="time" name="time" id="time" required />
+                </li>
+            </ul>
+
+        </fieldset>
+        <fieldset>
+            <legend>Textarea</legend>
+            <ul>
+                <li>
+                    <p>Summary of last operation:</p>
+                    <textarea name="" id="summary-1" rows="7" cols="50" placeholder="enter your summary"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>File Input</legend>
+            Drop your last Medical Report:
+            <label for="file" Drop your medical report hear></label>
+            <input type="file" name="" id="file" accept=".pdf" />
+        </fieldset>
+        <fieldset>
+            <legend>
+                Checkbox/select/Number
+            </legend>
+            <ul>
+                <li>
+                    <input type="checkbox" name="terms-conditions" id="checkbox" required value="yes-terms-condition" />
+                    <label name="" id="doc">You've read those terms and conditions</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select</legend>
+            <label for="States"> Select your state:</label>
+            <select name="states" id="states">
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="punjab">punjab</option>
+                <option value="mumbai">mumbai</option>
+                <option value="gujarat">gujarat</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="odisa">odisa</option>
+                <option value="rajesthan">rajesthan</option>
+
+            </select>
+
+        </fieldset>
+
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+
+</body>
+
+</html>
