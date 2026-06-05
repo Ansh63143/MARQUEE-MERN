@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    grid-column: 1 / 4;
+    background-color: steelblue;
+    border: 1px solid lightblue;
+    color: white;
+    padding: 10px;
+}
+
+.nav {
+    background-color: steelblue;
+    border: 1px solid lightblue;
+    color: white;
+    padding: 10px;
+}
+
+.content {
+    background-color: steelblue;
+    border: 1px solid lightblue;
+    color: white;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: steelblue;
+    border: 1px solid lightblue;
+    color: white;
+    padding: 10px;
+}
+
+.footer {
+    grid-column: 2 / 4;
+    background-color: steelblue;
+    border: 1px solid lightblue;
+    color: white;
+    padding: 10px;
+}
